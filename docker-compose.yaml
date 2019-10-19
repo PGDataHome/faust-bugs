@@ -16,7 +16,8 @@ services:
       KAFKA_ADVERTISED_HOST_NAME: localhost
       KAFKA_CREATE_TOPICS: >-
         livelock_broken:8:1,
-        livelock_working:8:1
+        livelock_working_1_7:8:1,
+        livelock_working_1_8:8:1
     expose:
       - 9092
     depends_on:

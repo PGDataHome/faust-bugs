@@ -6,8 +6,8 @@ class Greeting(faust.Record):
     to_name: str
 
 
-app = faust.App('livelock-bug-working', broker='kafka://localhost')
-topic = app.topic('livelock_working', value_type=Greeting)
+app = faust.App('livelock_working_1_7', broker='kafka://localhost')
+topic = app.topic('livelock_working_1_7', value_type=Greeting)
 app.conf.store = 'memory://'
 app.conf.web_port = 6099
 

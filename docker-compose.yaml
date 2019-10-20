@@ -21,6 +21,7 @@ services:
         examples.tableofset:4:1,
         people_joining2:4:1,
         people_leaving2:4:1,
+        window_key_broken_1_8_0:8:1
     expose:
       - 9092
     depends_on:
